@@ -1,0 +1,78 @@
+.container{
+
+    font-size: 30px;
+    display: grid;
+    background-color: beige;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    font-family: sans-serif;
+}
+
+.container > *{
+    font-size: medium;
+    background-color: white;
+    text-align: left;
+    color: #0a0101;
+}
+
+header, footer {
+    grid-column: 1 / span 2;
+
+}
+
+h1{
+    text-align: left;
+}
+h4{
+    text-align: left;
+    color: gray;
+}
+
+.navbar{
+    background-color: #16164d;
+    height: 40px;
+}
+
+.foo{
+    height: 300px;
+    background-color: #16164d;
+    text-align: center;
+
+}
+
+.logo{
+    text-align: center;
+    }
+    
+.publi{
+       width: 350px;
+       height: 800px;
+       background-color: blue;
+       text-align: center; 
+    }
+
+
+@media all and (max-width: 600px) {
+    aside, article{
+        grid-column: 1 / span 3;
+    }
+    .container{
+        grid-template-rows: repeat(5, 100px);
+    }
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container{
+        background-color: #00ffff;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {    
+    .container{
+        background-color: #f5f5dc;
+}
+}
+
